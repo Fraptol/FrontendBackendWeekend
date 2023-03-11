@@ -1,0 +1,119 @@
+html { background-color: #9E9FA3; scroll-behavior:smooth;
+	/*text*/
+	font-family:sans-serif;
+	font-size:24;
+	font-weight:normal;
+	font-style:;
+	color:black;
+	text-align:left;
+	text-transform:bold;
+	/*text*/
+}
+
+
+
+body { 
+	font-family: sans; font-size: 16px;
+}
+/*max-width: max-device-width*/
+@media only screen and (min-width: 768px) {
+body {
+	font-family: Trebuchet; font-size: 36px;
+}}
+.copy-float{position:fixed;right:50px; bottom:50px; 
+	font-size:40px}
+@media only screen and (min-width: 768px) {
+.copy-float{position:fixed;right:50px; bottom:50px; 
+	font-size:100px;}
+}
+
+
+
+header {height:50px}
+
+
+footer {
+	z-index: 100;
+	width: 100%; height:100%;
+/*	border:0; margin:0; padding:0;*/
+	border: 5px solid white; margin: 10px; padding: 10px; 
+	border-radius: 0 0 20px 20px; 
+	background: black;
+	text-align: center;
+	color: grey;
+}/*does not work yet*/
+
+
+#veryboxed{/*példaeszköznek*/
+/*content padding border margin*/
+/*top right bottom left*/
+	margin:auto;
+	border:auto;
+	padding:auto;
+	
+	padding-left:auto;
+	margin-left:auto;
+}
+
+/*pédaeszköznek*/
+.flex-container 				{ display: flex; }
+.flex-container > div 			{ width:100%; }
+.flex-container-vertical 		{ display: flex; flex-direction: column; }
+.flex-container-vertical > div	{ width:100%; }
+
+.topfixed {
+	overflow: hidden;	/*hidden under*/
+	top: 0;	position: fixed;	/*stay*/
+	width: 100%;
+}
+.topsticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+p {
+	font-family: verdana;
+	font-size: 20px;
+	border-left: 5px solid darkblue;
+}
+
+
+
+
+#bordered {
+	border: 5px solid white; margin: 10px; padding: 10px; 
+	border-radius: 0 0 20px 20px; 
+}
+
+/* name		"name"TAGS
+ * .name	CLASS
+ * #name	ID
+ * *		ALL APLICABLE TAGS
+ */
+ 
+/* content padding border margin*/
+/* top right bottom left*/
+/* position: static absolute relative fixed */
+
+/*
+ * width, height;  
+ * inherit, auto
+ * margin collapse: The margin value between 2 elements 
+    will automatically be the higher value
+  *	cursor: pointer /on hover value
+ */
+
+/*fontok: Trebuchet, Helvetica Standard, Source Sans Pro, Arial, Times New Roman*/
+
+/* inheritence~ all~ inherit(parent) initial(nonformated) unset*/
+
+/*ideas
+ * egy gomb több másik helyen nyit meg ablakokat.
+	useless
+ */
+ 
