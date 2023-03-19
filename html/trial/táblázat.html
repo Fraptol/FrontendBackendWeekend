@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu"><!--HyperTextMarkupLanguage-->
+<head>
+	<title>tábla</title>
+
+
+	<meta charset="UTF-8">
+	<link id="favicon" rel="icon" href="../pic/favicon.svg">
+	<!--	TryOuts 	-->
+	<style>
+		#color1 {background-color: #55A5ED;}
+	</style>
+	<link rel="stylesheet" href="../css/Formating.css">
+
+</head>
+<body>
+	<h1>Táblázat</h1>
+	<div class="táblázat"><table>
+		<caption style="background-color: azure">Táblanév (caption)</caption>
+		<!--
+        Tartalmaz <1 táblázatot>
+        van olyan táblázat aminek <"van fejléce" ami "másképp jelenik meg"> ?Másképp mint????
+        van olyan táblázat ami használ <headers attribútumot> megfelelő módon
+        -->
+		<colgroup><!--styleozás oszlopról oszlopra /... -->
+			<col style="background-color: salmon" >
+			<col style="background-color: lightgreen;" span="2">
+			<!--
+            hatástalan caption-re és row-ra
+            <caption style="background-color: olivedrab">
+            <row style="background-color: darkcyan;">
+            -->
+		</colgroup>
+			<thead>
+				<tr>tableRow-ban
+					<th id="elso">tableHead1(head)</th>
+					<th id="masodik" colspan="3">tableHead2(head)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>említettek
+					<td headers="elso" rowspan="2">tartalom1</td>
+					<td h eaders="masodik">tartalom2.1</td>
+					<td headers="masodik">tartalom2.2</td>
+				</tr>
+				<tr>máshova kerülnek
+					<td headers="elso" rowspan="2">tartalom1</td> <!--felülír-->
+					<td headers="masodik" colspan="2">tartalom*2</td>
+				</tr>
+			</tbody>
+			<tfoot></tfoot>
+		</table></div>
+	<h2>Elvárások</h2>
+	<ol>
+		<li><em>A weboldal legalább 1 táblázatot tartalmaz (0/2 pont)</em></li>
+		<li><em> Létezik olyan táblázat, amelynek van fejléce, ami másképpen jelenik meg (0/1 pont)</em> - van
+			technikailag fejléce, a betű alapból más, de css formázhatjuk. < th>-re vonatkozzunk
+		</li>
+		<li><em> Létezik olyan táblázat, amely használ headers attribútumot megfelelő módon (0/1 pont)</em> -
+			Feltételezhetően sorok elemei hozzárendeltek az id-jeikhez
+		</li>
+	</ol>
+
+
+</body>
+</html>

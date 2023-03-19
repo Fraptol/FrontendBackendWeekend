@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu"><!--HyperTextMarkupLanguage-->
+<head>
+	<title>Form</title>
+
+
+	<meta charset="UTF-8">
+	<link id="favicon" rel="icon" href="../pic/favicon.svg">
+	<!--	TryOuts 	-->
+	<style>
+		#color1 {background-color: #55A5ED;}
+		label{/*adott szélesség alatt összecsúsztatni egy oszlopba?*/}
+	</style>
+	<link rel="stylesheet" href="../css/Formating.css">
+
+</head>
+<body>
+	<h1>Form</h1>
+	<form action="feldolgoz.php" method="POST"><!--enctype="multipart/form-data" ?-->
+        <fieldset>
+          <legend>Feliratkozás ajándékozónak</legend>
+          <label>Teljes név: <input type="text" name="full-name" size="40" required></label> <br>
+          <label>Születési dátum: <input type="date" name="birth-date" max="2013-01-01" min="1903-01-02" value="2000-06-15" required> </label><br>
+          <label>E-mail: <input type="email" name="email" required></label> <br>
+		  <label>Telefon: <input type="tel" name="phone" > </label>
+        </fieldset>
+        <fieldset>
+          <legend>Társított üzenet</legend>
+		Szeretnéd ha tudnák te küldted?
+		  <label for="op-No">nem:</label><input type="radio" id="op-No" name="anon" value="anonim">
+      <label for="op-Yes">igen:</label><input type="radio" id="op-Yes" name="anon" value="proud">
+        <br>
+        <label>Kép (a csomagolásra): <input type="file" name="profile"></label> <br>
+        <label for="messege">Üzenet (a csomagolásra):</label> <br>
+        <textarea id="messege" name="cédula" maxlength="250"></textarea> <br>
+
+        <button type="reset" name="reset" value="Adatok törlése">Mégsem</button>
+        <button type="submit" name="submit" value="Adatok elküldése">Vállalom</button>
+        </fieldset>
+      </form>
+	<ul>
+		<li>1+ űrlap - 4+ mező - 2p</li>
+		<li>6+ különböző típusú input mező - 2p</li>
+		<li>űrlap submit-tel - 2p</li>
+		<li>űrlap resettel - 2p</li>
+		<li>űrlap mezőcsoportosítással - 2p</li>
+	</ul>
+
+</body>
+</html>

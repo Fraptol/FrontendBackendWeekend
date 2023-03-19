@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+
+  <head>
+    <title>Jelentkezés</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/feladat.css">
+    <link rel="icon" type="image/x-icon" href="../Files/favicon.ico">
+    <style>
+      #Jelentkezes {
+        background-color: #b9d7cd;
+      } /*jelenlegi oldal*/
+    </style>
+       <style >
+           #tabla {width: auto;}
+           .regisztracios_urlap {
+            text-align:left;}
+        </style>
+  </head>
+<title>Jelentkező oldal</title>
+  <body><div>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+          <!--Sticky flex menu-->
+        </nav>
+<!--FORM-->
+<!--data: 
+    form    POST
+    form    class="regisztracios_urlap" 
+    h1      Lapcím
+    h2      címszövegek
+    h5      Alcím
+    table   Elhelyezéshez
+    table   id="regisztracios_tabla" 
+-->
+    
+    <h1>Jelentkező lap</h1>
+    <h5>A párnak mennyi jóllétéért vállalsz felelősséget?</h5>
+    <form method="POST" class="regisztracios_urlap">
+        <fieldset>
+            <legend>Regisztrációs adatok</legend>
+            <table id="regisztracios_tabla" inline>
+                <tr><label>
+                    <th>Teljes név: </th>
+                    <th><input type="text" name="nev" size="25" maxlength="2000" required></th>
+                </label></tr>
+                <tr><label>
+                    <th>Születési dátum: </th>
+                    <th><input type="date" name="szuletesnap" max="2013-01-01" min="1903-01-02"  value="2000-06-15" required></th>
+                </label></tr> <br/>
+                    <tr><label>
+                    <th>E-mail: </th>
+                    <th><input title="Személyes elérhetőséged " type="email" name="email" size="25" maxlength="60" required></th>
+                </label></tr>
+                    <tr><label>
+                    <th>Telefon:</th>
+                    <th><input title="Személyes elérhetőséged" type="tel" name="telefon" size="25" maxlength="60" required></th>
+                </label></tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <label><h2>Miért szeretnél segíteni nekünk? </h2><br>
+                <textarea name="cassusbelli" maxlenght="2000" rows="6" cols="70" placeholder="Nem muszály leírnod!"></textarea></label> <br>
+            <label><h2>Miben szeretnél segíteni nekünk?</h2>
+                <textarea name="segitokezek" maxlenght="2000" rows="6" cols="70" placeholder="Mire jelentkezel biztosan?"></textarea></label> <br>
+        </fieldset>
+        <fieldset><label>
+            <h2  title="Szívesen megszervezünk neked egy nyaralást piciny városunkba.">Szívesen nyaralnál itt? </h2><br>
+            <input type="radio" name="Vakacio" title="Nem baj ha nem tudsz dönteni.">       Igen!<br>
+            <input type="radio" name="Vakacio" title="Nem baj ha nem tudsz dönteni." checked>Nem...
+            
+        </label> <br/>
+    
+    </fieldset>
+            <table id="regisztracios_tabla" inline>
+                <tr>
+                    <label for = "set">
+                    <th>Jelentkezem!</th>
+                    <th><input id="set" type="submit" title="Küldés" value="Bead"/></th>
+                    </label><br/>
+                </tr>
+                <tr>
+                    <label for ="reset">
+                    <th>Törlés: Újrakezdem</th>
+                    <th><input id="reset" title="VIGYÁZAT: MINDEN MEGADOTT ADAT TÖRLŐDIK" type="reset" value="TÖRÖL*"/></th>
+                    </label><br/>
+                </tr>
+            </table>
+        </div>
+
+<!--FORM-->
+  </body>
+  <foot>
+  </foot>
+</html>
